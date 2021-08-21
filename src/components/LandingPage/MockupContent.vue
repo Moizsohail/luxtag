@@ -30,11 +30,12 @@ export default {
   },
   computed: {
     src() {
-      if (this.mockupData.image)
+      console.log(process.env.NODE_ENV);
+      if (this.publicPath)
         console.log(URL.createObjectURL(this.mockupData.image));
       return this.mockupData.image
         ? URL.createObjectURL(this.mockupData.image)
-        : "/time-management-multitasking.jpg";
+        : `/time-management-multitasking.jpg`;
     },
   },
 };

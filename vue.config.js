@@ -7,5 +7,5 @@ module.exports = {
       },
     },
   },
-  publicPath: "/luxtag/",
+  publicPath: process.env.NODE_ENV === "production" ? "/luxtag/" : "/",
 };
