@@ -35,7 +35,9 @@ export default {
         console.log(URL.createObjectURL(this.mockupData.image));
       return this.mockupData.image
         ? URL.createObjectURL(this.mockupData.image)
-        : `/time-management-multitasking.jpg`;
+        : `${
+            process.env.NODE_ENV === "production" ? "/luxtag" : ""
+          }/time-management-multitasking.jpg`;
     },
   },
 };
