@@ -108,7 +108,7 @@ export default {
 }
 </style>
 <style lang="scss">
-.ql-snow .ql-editor {
+.content .ql-snow .ql-editor {
   img {
     border-radius: 20px;
     width: 100%;
@@ -130,6 +130,9 @@ export default {
       Times New Roman, Times, serif;
     font-size: 0.8em;
     font-stretch: normal;
+  }
+  .ql-video {
+    width: 100%;
   }
 }
 </style>

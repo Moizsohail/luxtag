@@ -10,7 +10,6 @@
       </v-col>
       <v-col>
         <mockup :mockupData="mockup" />
-        <!-- {{ mockup.content }} -->
       </v-col>
     </v-row>
   </v-container>
